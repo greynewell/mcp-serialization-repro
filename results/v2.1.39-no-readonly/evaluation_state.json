@@ -1,0 +1,491 @@
+{
+  "state_version": "1.0",
+  "created_at": "2026-02-12T19:24:36.424166+00:00",
+  "updated_at": "2026-02-12T19:41:23.253379+00:00",
+  "config_hash": "",
+  "tasks": {
+    "astropy__astropy-13236": {
+      "instance_id": "astropy__astropy-13236",
+      "task_hash": "8e565c867aab1ddbfe953824d0bcfacadcef953ce8679f9d33521e941cfda800",
+      "completed": true,
+      "mcp_result": {
+        "patch_generated": true,
+        "tokens": {
+          "input": 63,
+          "output": 5169
+        },
+        "iterations": 30,
+        "tool_calls": 37,
+        "runtime_seconds": 248.77231001853943,
+        "cost": 0.4275487999999999,
+        "tool_usage": {
+          "TodoWrite": 4,
+          "Task": 1,
+          "Bash": 18,
+          "mcp__filesystem__read_text_file": 8,
+          "mcp__filesystem__search_files": 3,
+          "mcp__filesystem__edit_file": 1,
+          "mcp__filesystem__write_file": 2
+        },
+        "tool_failures": {
+          "mcp__filesystem__read_text_file": 3,
+          "Bash": 4
+        },
+        "tool_errors": {
+          "mcp__filesystem__read_text_file": [
+            "Cannot specify both head and tail parameters simultaneously",
+            "Cannot specify both head and tail parameters simultaneously",
+            "Cannot specify both head and tail parameters simultaneously"
+          ],
+          "Bash": [
+            "Exit code 1\nTraceback (most recent call last):\n  File \"/workspace/test_fix.py\", line 7, in <module>\n    import numpy as np\nModuleNotFoundError: No module named 'numpy'",
+            "Exit code 1\nTraceback (most recent call last):\n  File \"/workspace/test_fix.py\", line 7, in <module>\n    import numpy as np\nModuleNotFoundError: No module named 'numpy'",
+            "Exit code 1\n/usr/bin/python: No module named pytest",
+            "Exit code 1\n<string>:4: ResourceWarning: unclosed file <_io.TextIOWrapper name='astropy/table/tests/test_mixin.py' mode='r' encoding='UTF-8'>\nResourceWarning: Enable tracemalloc to get the object allo"
+          ]
+        },
+        "resolved": false,
+        "patch_applied": true,
+        "fail_to_pass": {
+          "passed": 0,
+          "total": 2
+        },
+        "pass_to_pass": {
+          "passed": 10,
+          "total": 10
+        }
+      },
+      "baseline_result": {
+        "patch_generated": true,
+        "tokens": {
+          "input": 83,
+          "output": 4586
+        },
+        "iterations": 23,
+        "tool_calls": 32,
+        "runtime_seconds": 189.04377818107605,
+        "cost": 0.3159945500000001,
+        "tool_usage": {
+          "TodoWrite": 4,
+          "Task": 1,
+          "Grep": 8,
+          "Read": 9,
+          "Edit": 1,
+          "Bash": 5,
+          "Glob": 4
+        },
+        "tool_failures": {
+          "Read": 1,
+          "Bash": 3
+        },
+        "tool_errors": {
+          "Read": [
+            "File content (39608 tokens) exceeds maximum allowed tokens (25000). Please use offset and limit parameters to read specific portions of the file, or use the GrepTool to search for specific content."
+          ],
+          "Bash": [
+            "Exit code 1\nTraceback (most recent call last):\n  File \"<string>\", line 2, in <module>\nModuleNotFoundError: No module named 'numpy'",
+            "Exit code 1\nTraceback (most recent call last):\n  File \"<string>\", line 6, in <module>\nModuleNotFoundError: No module named 'numpy'",
+            "Exit code 1\n/usr/bin/python: No module named pytest"
+          ]
+        },
+        "resolved": false,
+        "patch_applied": true,
+        "fail_to_pass": {
+          "passed": 0,
+          "total": 2
+        },
+        "pass_to_pass": {
+          "passed": 10,
+          "total": 10
+        }
+      },
+      "timestamp": "2026-02-12T19:32:07.174649+00:00",
+      "error": null
+    },
+    "astropy__astropy-13398": {
+      "instance_id": "astropy__astropy-13398",
+      "task_hash": "c5b7a01b6b662f1ecf5ece1ecb9306bbe4a158b9e462187bc1ead4d166f9bd3c",
+      "completed": true,
+      "mcp_result": {
+        "patch_generated": true,
+        "tokens": {
+          "input": 130,
+          "output": 6162
+        },
+        "iterations": 30,
+        "tool_calls": 30,
+        "runtime_seconds": 239.75132584571838,
+        "cost": 0.5429960000000001,
+        "tool_usage": {
+          "mcp__filesystem__list_allowed_directories": 1,
+          "mcp__filesystem__list_directory": 4,
+          "mcp__filesystem__read_text_file": 11,
+          "TodoWrite": 4,
+          "mcp__filesystem__write_file": 2,
+          "mcp__filesystem__edit_file": 1,
+          "mcp__filesystem__search_files": 2,
+          "Bash": 5
+        },
+        "tool_failures": {
+          "Bash": 3
+        },
+        "tool_errors": {
+          "Bash": [
+            "Exit code 1\n/usr/bin/python: No module named pytest",
+            "Exit code 1\nTraceback (most recent call last):\n  File \"/workspace/test_itrs_transformations.py\", line 6, in <module>\n    import numpy as np\nModuleNotFoundError: No module named 'numpy'",
+            "Exit code 1\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/workspace/astropy/__init__.py\", line 41, in <module>\n    from . import config as _config  # noqa: E402\n  "
+          ]
+        },
+        "resolved": false,
+        "patch_applied": true,
+        "fail_to_pass": {
+          "passed": 0,
+          "total": 4
+        },
+        "pass_to_pass": {
+          "passed": 0,
+          "total": 10
+        }
+      },
+      "baseline_result": {
+        "patch_generated": true,
+        "tokens": {
+          "input": 110,
+          "output": 7210
+        },
+        "iterations": 29,
+        "tool_calls": 51,
+        "runtime_seconds": 297.00607681274414,
+        "cost": 0.7401025000000001,
+        "tool_usage": {
+          "TodoWrite": 5,
+          "Task": 1,
+          "Bash": 16,
+          "Read": 21,
+          "Write": 1,
+          "Edit": 1,
+          "Grep": 6
+        },
+        "tool_failures": {
+          "Bash": 2
+        },
+        "tool_errors": {
+          "Bash": [
+            "Exit code 1\nTraceback (most recent call last):\n  File \"<string>\", line 2, in <module>\nModuleNotFoundError: No module named 'numpy'",
+            "Exit code 1\nTraceback (most recent call last):\n  File \"<string>\", line 4, in <module>\n  File \"/workspace/astropy/__init__.py\", line 41, in <module>\n    from . import config as _config  # noqa: E402\n  "
+          ]
+        },
+        "resolved": false,
+        "patch_applied": true,
+        "fail_to_pass": {
+          "passed": 0,
+          "total": 4
+        },
+        "pass_to_pass": {
+          "passed": 0,
+          "total": 10
+        }
+      },
+      "timestamp": "2026-02-12T19:33:47.832176+00:00",
+      "error": null
+    },
+    "astropy__astropy-13033": {
+      "instance_id": "astropy__astropy-13033",
+      "task_hash": "490fc88173efe4bef20bf0e5f9e051ae8869e49a9623fbcc986c9b82e59a7d16",
+      "completed": true,
+      "mcp_result": {
+        "patch_generated": true,
+        "tokens": {
+          "input": 124,
+          "output": 7529
+        },
+        "iterations": 30,
+        "tool_calls": 48,
+        "runtime_seconds": 285.0870928764343,
+        "cost": 0.60486105,
+        "tool_usage": {
+          "TodoWrite": 4,
+          "Task": 1,
+          "mcp__filesystem__list_allowed_directories": 1,
+          "Bash": 15,
+          "mcp__filesystem__directory_tree": 1,
+          "mcp__filesystem__read_text_file": 14,
+          "mcp__filesystem__search_files": 2,
+          "mcp__filesystem__write_file": 1,
+          "mcp__filesystem__edit_file": 9
+        },
+        "tool_failures": {
+          "mcp__filesystem__read_text_file": 3,
+          "Bash": 2,
+          "mcp__filesystem__edit_file": 1
+        },
+        "tool_errors": {
+          "mcp__filesystem__read_text_file": [
+            "Cannot specify both head and tail parameters simultaneously",
+            "Cannot specify both head and tail parameters simultaneously",
+            "Cannot specify both head and tail parameters simultaneously"
+          ],
+          "Bash": [
+            "Exit code 1\nTraceback (most recent call last):\n  File \"/workspace/reproduce_bug.py\", line 3, in <module>\n    import numpy as np\nModuleNotFoundError: No module named 'numpy'",
+            "Exit code 1\nTraceback (most recent call last):\n  File \"<string>\", line 3, in <module>\n  File \"/workspace/./astropy/__init__.py\", line 41, in <module>\n    from . import config as _config  # noqa: E402\n"
+          ],
+          "mcp__filesystem__edit_file": [
+            "MCP error -32602: Input validation error: Invalid arguments for tool edit_file: [\n  {\n    \"expected\": \"array\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"edits\"\n    ],\n    \"message\": \"Invalid in"
+          ]
+        },
+        "resolved": true,
+        "patch_applied": true,
+        "fail_to_pass": {
+          "passed": 1,
+          "total": 1
+        },
+        "pass_to_pass": {
+          "passed": 10,
+          "total": 10
+        }
+      },
+      "baseline_result": {
+        "patch_generated": true,
+        "tokens": {
+          "input": 88,
+          "output": 8706
+        },
+        "iterations": 30,
+        "tool_calls": 50,
+        "runtime_seconds": 270.7340359687805,
+        "cost": 0.5333951,
+        "tool_usage": {
+          "TodoWrite": 5,
+          "Task": 1,
+          "Glob": 3,
+          "Grep": 11,
+          "Read": 12,
+          "Bash": 11,
+          "Write": 4,
+          "Edit": 3
+        },
+        "tool_failures": {
+          "Bash": 5
+        },
+        "tool_errors": {
+          "Bash": [
+            "Exit code 1\nTraceback (most recent call last):\n  File \"/workspace/reproduce_bug.py\", line 1, in <module>\n    import numpy as np\nModuleNotFoundError: No module named 'numpy'",
+            "Exit code 1\nTraceback (most recent call last):\n  File \"<string>\", line 4, in <module>\nModuleNotFoundError: No module named 'numpy'",
+            "Exit code 1\nTraceback (most recent call last):\n  File \"/workspace/reproduce_bug.py\", line 2, in <module>\n    from astropy.time import Time\n  File \"/workspace/astropy/__init__.py\", line 41, in <module>",
+            "Exit code 1\n/usr/bin/python: No module named pytest",
+            "Exit code 1\nTraceback (most recent call last):\n  File \"/workspace/test_bug_scenario.py\", line 25, in <module>\n    with unittest.mock.patch('astropy.time.Time', MockTime):\n  File \"/usr/lib/python3.10/u"
+          ]
+        },
+        "resolved": false,
+        "patch_applied": true,
+        "fail_to_pass": {
+          "passed": 0,
+          "total": 1
+        },
+        "pass_to_pass": {
+          "passed": 10,
+          "total": 10
+        }
+      },
+      "timestamp": "2026-02-12T19:34:04.617452+00:00",
+      "error": null
+    },
+    "astropy__astropy-12907": {
+      "instance_id": "astropy__astropy-12907",
+      "task_hash": "9f696b5fd367a789ef14079a20400c2a136d4c20b78542fe4d30a18dc11ff1d8",
+      "completed": true,
+      "mcp_result": {
+        "patch_generated": true,
+        "tokens": {
+          "input": 131,
+          "output": 6265
+        },
+        "iterations": 30,
+        "tool_calls": 30,
+        "runtime_seconds": 259.398432970047,
+        "cost": 0.46429784999999996,
+        "tool_usage": {
+          "TodoWrite": 4,
+          "mcp__filesystem__directory_tree": 1,
+          "mcp__filesystem__search_files": 3,
+          "mcp__filesystem__read_text_file": 4,
+          "Bash": 14,
+          "mcp__filesystem__write_file": 3,
+          "mcp__filesystem__edit_file": 1
+        },
+        "tool_failures": {
+          "mcp__filesystem__read_text_file": 1,
+          "Bash": 4
+        },
+        "tool_errors": {
+          "mcp__filesystem__read_text_file": [
+            "Cannot specify both head and tail parameters simultaneously"
+          ],
+          "Bash": [
+            "Exit code 1\nTraceback (most recent call last):\n  File \"/workspace/test_bug.py\", line 4, in <module>\n    from astropy.modeling import models as m\n  File \"/workspace/astropy/__init__.py\", line 41, in <m",
+            "Exit code 1\nTraceback (most recent call last):\n  File \"<string>\", line 2, in <module>\nModuleNotFoundError: No module named 'numpy'",
+            "Exit code 1\nTraceback (most recent call last):\n  File \"/workspace/test_fix.py\", line 7, in <module>\n    import numpy as np\nModuleNotFoundError: No module named 'numpy'",
+            "Exit code 1\n/usr/bin/python: No module named pytest"
+          ]
+        },
+        "resolved": true,
+        "patch_applied": true,
+        "fail_to_pass": {
+          "passed": 2,
+          "total": 2
+        },
+        "pass_to_pass": {
+          "passed": 10,
+          "total": 10
+        }
+      },
+      "baseline_result": {
+        "patch_generated": true,
+        "tokens": {
+          "input": 72,
+          "output": 13548
+        },
+        "iterations": 24,
+        "tool_calls": 57,
+        "runtime_seconds": 327.33521580696106,
+        "cost": 0.67502195,
+        "tool_usage": {
+          "TodoWrite": 5,
+          "Task": 1,
+          "Glob": 4,
+          "Bash": 27,
+          "Grep": 3,
+          "Read": 12,
+          "Write": 4,
+          "Edit": 1
+        },
+        "tool_failures": {
+          "Bash": 4
+        },
+        "tool_errors": {
+          "Bash": [
+            "Exit code 1\nTraceback (most recent call last):\n  File \"<string>\", line 2, in <module>\n  File \"/workspace/astropy/__init__.py\", line 41, in <module>\n    from . import config as _config  # noqa: E402\n  ",
+            "Exit code 1\nTraceback (most recent call last):\n  File \"<string>\", line 5, in <module>\n  File \"/workspace/astropy/__init__.py\", line 41, in <module>\n    from . import config as _config  # noqa: E402\n  ",
+            "Exit code 1\nTraceback (most recent call last):\n  File \"/workspace/debug_separable.py\", line 46, in <module>\n    from astropy.modeling.separable import _coord_matrix, _cstack, _cdot, _separable\n  File ",
+            "Exit code 1\nTraceback (most recent call last):\n  File \"<string>\", line 7, in <module>\n  File \"/workspace/astropy/__init__.py\", line 41, in <module>\n    from . import config as _config  # noqa: E402\n  "
+          ]
+        },
+        "resolved": true,
+        "patch_applied": true,
+        "fail_to_pass": {
+          "passed": 2,
+          "total": 2
+        },
+        "pass_to_pass": {
+          "passed": 10,
+          "total": 10
+        }
+      },
+      "timestamp": "2026-02-12T19:34:34.526249+00:00",
+      "error": null
+    },
+    "astropy__astropy-13453": {
+      "instance_id": "astropy__astropy-13453",
+      "task_hash": "21a5314d34a490a823d649acefed2792b33a78f1bae23c6cff2a24522b896cab",
+      "completed": true,
+      "mcp_result": {
+        "patch_generated": true,
+        "tokens": {
+          "input": 96,
+          "output": 8023
+        },
+        "iterations": 30,
+        "tool_calls": 73,
+        "runtime_seconds": 292.2704360485077,
+        "cost": 0.8683273,
+        "tool_usage": {
+          "TodoWrite": 5,
+          "Task": 1,
+          "mcp__filesystem__list_allowed_directories": 1,
+          "mcp__filesystem__directory_tree": 1,
+          "mcp__filesystem__search_files": 7,
+          "mcp__filesystem__read_text_file": 17,
+          "Bash": 36,
+          "bash": 1,
+          "mcp__filesystem__write_file": 3,
+          "mcp__filesystem__edit_file": 1
+        },
+        "tool_failures": {
+          "bash": 1,
+          "Bash": 4,
+          "mcp__filesystem__read_text_file": 2
+        },
+        "tool_errors": {
+          "bash": [
+            "<tool_use_error>Error: No such tool available: bash</tool_use_error>"
+          ],
+          "Bash": [
+            "Exit code 1\nTraceback (most recent call last):\n  File \"<string>\", line 2, in <module>\n  File \"/workspace/astropy/__init__.py\", line 41, in <module>\n    from . import config as _config  # noqa: E402\n  ",
+            "Exit code 1\nTraceback (most recent call last):\n  File \"/workspace/test_reproduce_bug.py\", line 3, in <module>\n    from astropy.table import Table\n  File \"/workspace/astropy/__init__.py\", line 41, in <",
+            "Exit code 1\n  error: subprocess-exited-with-error\n  \n  \u00d7 Getting requirements to build wheel did not run successfully.\n  \u2502 exit code: 1\n  \u2570\u2500> [47 lines of output]\n      Extension astropy.io.fits.compr",
+            "Exit code 1\nTraceback (most recent call last):\n  File \"/workspace/test_html_fix.py\", line 13, in <module>\n    from astropy.io.ascii import html, core\n  File \"/workspace/astropy/__init__.py\", line 41, "
+          ],
+          "mcp__filesystem__read_text_file": [
+            "Cannot specify both head and tail parameters simultaneously",
+            "Cannot specify both head and tail parameters simultaneously"
+          ]
+        },
+        "resolved": true,
+        "patch_applied": true,
+        "fail_to_pass": {
+          "passed": 1,
+          "total": 1
+        },
+        "pass_to_pass": {
+          "passed": 9,
+          "total": 9
+        }
+      },
+      "baseline_result": {
+        "patch_generated": true,
+        "tokens": {
+          "input": 85,
+          "output": 6357
+        },
+        "iterations": 30,
+        "tool_calls": 68,
+        "runtime_seconds": 252.77885127067566,
+        "cost": 0.6952700500000002,
+        "tool_usage": {
+          "TodoWrite": 6,
+          "Task": 1,
+          "Bash": 23,
+          "Glob": 3,
+          "Grep": 5,
+          "Read": 26,
+          "Edit": 1,
+          "Write": 3
+        },
+        "tool_failures": {
+          "Bash": 5
+        },
+        "tool_errors": {
+          "Bash": [
+            "Exit code 1\nTraceback (most recent call last):\n  File \"/workspace/test_fix.py\", line 4, in <module>\n    from astropy.table import Table\n  File \"/workspace/astropy/__init__.py\", line 41, in <module>\n  ",
+            "Exit code 1\nTraceback (most recent call last):\n  File \"/workspace/test_fix.py\", line 4, in <module>\n    from astropy.table import Table\n  File \"/workspace/astropy/__init__.py\", line 41, in <module>\n  ",
+            "Exit code 1\nTraceback (most recent call last):\n  File \"/workspace/simple_test.py\", line 9, in <module>\n    from astropy.io.ascii import html\n  File \"/workspace/astropy/__init__.py\", line 41, in <modul",
+            "Exit code 1\nTraceback (most recent call last):\n  File \"/workspace/astropy/__init__.py\", line 143, in _initialize_astropy\n    from .utils import _compiler  # noqa: F401\nImportError: cannot import name ",
+            "Exit code 1\nTraceback (most recent call last):\n  File \"/workspace/setup.py\", line 66, in <module>\n    from extension_helpers import get_extensions  # noqa\nModuleNotFoundError: No module named 'extensi"
+          ]
+        },
+        "resolved": false,
+        "patch_applied": true,
+        "fail_to_pass": {
+          "passed": 0,
+          "total": 1
+        },
+        "pass_to_pass": {
+          "passed": 2,
+          "total": 9
+        }
+      },
+      "timestamp": "2026-02-12T19:41:23.253357+00:00",
+      "error": null
+    }
+  }
+}

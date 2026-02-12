@@ -1,0 +1,41 @@
+mcp_server:
+  name: "filesystem"
+  command: "node"
+  args:
+    - "/mcp-proxy/instrumented-proxy.mjs"
+    - "{workdir}"
+  startup_timeout_ms: 60000
+  tool_timeout_ms: 900000
+
+provider: "anthropic"
+agent_harness: "claude-code"
+model: "claude-sonnet-4-20250514"
+benchmark: "swe-bench-verified"
+sample_size: 5
+max_iterations: 30
+timeout_seconds: 300
+max_concurrent: 4
+use_prebuilt_images: true
+output_dir: "./results/v2.1.39"
+
+volumes:
+  "./proxy": "/mcp-proxy"
+
+prompt: |
+  Fix the following bug in this repository:
+
+  {problem_statement}
+
+  IMPORTANT CONSTRAINTS:
+  - Only modify the minimum files necessary to fix the bug
+  - Do NOT create new test files
+  - Do NOT create documentation files
+  - Do NOT create reproduction scripts
+  - Focus solely on the fix in existing source files
+
+  CRITICAL REQUIREMENT — MCP TOOL USAGE:
+  You MUST use the MCP filesystem tools (mcp__filesystem__read_file, mcp__filesystem__list_directory, mcp__filesystem__search_files, etc.) instead of the built-in Read, Glob, and Grep tools for ALL file reading and codebase navigation. Use the MCP tools for reading files, listing directories, and searching. You may still use the built-in Edit, Write, and Bash tools for making changes and running commands.
+
+  When you need to read multiple files, request all MCP read operations in parallel in a single message rather than one at a time.
+
+  The repository is located at {workdir}.
