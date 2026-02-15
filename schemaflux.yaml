@@ -1,0 +1,20 @@
+site:
+  name: "MCP Serialization Repro"
+  base_url: "https://greynewell.github.io/mcp-serialization-repro"
+  description: "Research findings on MCP tool call parallelism in Claude Code. MCP tools parallelize when servers set readOnlyHint: true."
+  language: "en"
+  author: "Grey Newell"
+  author_url: "https://greynewell.com"
+  repo_url: "https://github.com/greynewell/mcp-serialization-repro"
+
+paths:
+  data: "./data"
+  templates: "./templates"
+  output: "./docs"
+
+data:
+  format: "markdown"
+  entity_type: "page"
+
+templates:
+  homepage: "index.html"
